@@ -8,8 +8,133 @@
 
 </head>
 <body>
-    <h1>HTML Table Reference</h1>
-        <h2>Table Tags</h2>
+    <header>
+        <h1>HTML Cheatsheet</h1>
+    </header>
+    <main>
+    <h2>Elements and Structure</h2>
+        <section>
+        <h4>HTML</h4>
+            <p>HTML (HyperText Markup Language) is used to give content to a web page and instructs web browsers on how to structure that content.</p>
+        <h4>HTML Element</h4>
+            <p>
+                An HTML element is a piece of content in an HTML document and uses the following syntax: 
+                <ul>
+                    <li>Opening tag</li>
+                    <li>Content</li>
+                    <li>Closing tag</li>
+                </ul>
+            </p>
+            <p>
+                ex: <span class="code">&lt;p&gt;Hello World!&lt;/p&gt;</span>
+            </p>
+            
+        <h4>HTML Tag</h4>
+            <p>
+                The syntax for a single HTML tag is an opening angle bracket &lt;<&gt; followed by the element name and a closing angle bracket &lt;>&gt;. 
+                Here is an example of an opening &lt;div&gt; tag.
+            </p>
+            <p>
+                <span class="code">&lt;div&gt;</span>
+            </p>
+
+        <h4>Element Content</h4>
+            <p>
+                The content of an HTML element is the information between the opening and closing tags of an element.
+            </p>
+            <p>
+                <span class="code">
+                    &lt;body&gt;this is the content&lt;/body&gt;</span>
+            </p>
+
+        <h4>Closing Tag</h4>
+            <p>
+                An HTML closing tag is used to denote the end of an HTML element. The syntax for a closing tag is a left angle bracket < followed by a 
+                forward slash / then the element name and a right angle bracket to close >.
+            </p>
+            <p>
+                <span class="code">&lt;body&gt; . . . &lt;/body&gt;</span>
+            </p>
+            
+        <h4><span class ="code">&lt;body&gt;</span> Body Element</h4>
+            <p>
+                The &lt;body&gt; element represents the content of an HTML document. Content inside &lt;body&gt; tags are rendered on the web browsers.
+            </p>
+            <p>
+                <strong>Note:</strong> There can be only one &lt;body&gt; element in a document.
+            </p>
+            <p class="code">
+                &lt;body&gt; 
+                &lt;h1&gt;Main content of HTML doc&lt;/h1&gt;
+                &lt;/body&gt;
+            </p>
+            
+        <h4>HTML Structure</h4>
+            <p>HTML is organized into a family tree structure. HTML elements can have parents, grandparents, siblings, children, grandchildren, etc.</p>
+            <p class="code">
+                &lt;body&gt; 
+                &lt;div&gt;
+                    &lt;h1&gt;It's div's child and body's grandchild&lt;/h1&gt;
+                    &lt;h2&gt;It's h1's sibling&lt;/h2&gt;
+                &lt;/div&gt; 
+            &lt;/body&gt;
+            </p>
+        
+        <h4><span class ="code">&lt;h1&gt;-&lt;h6&gt;</span> Heading Elements</h4>
+            <p>HTML can use six different levels of heading elements. The heading elements are ordered from the highest level <span class="code">&lt;h1&gt;</span> 
+                to the lowest level <span class="code">&lt;h6&gt;</span>.</p>
+            <p class="code">
+                &lt;h1&gt;Breaking News&lt;/h1&gt;
+                &lt;h2&gt;This is the first subheading&lt;/h2&gt;
+                . . .
+                &lt;h6&gt;This is the fifth subheading&lt;/h6&gt;
+            </p>
+            
+        <h4><span class ="code">&lt;div&gt;</span> Div Element</h4>
+            <p>The &lt;div&gt; element is used as a container that divides an HTML document into sections and is short for “division”. &lt;div&gt; 
+                elements can contain flow content such as headings, paragraphs, links, images, etc.</p>
+            <p class="code">
+                &lt;div&gt; 
+                    &lt;h1&gt;A section of grouped elements&lt;h1&gt;
+                    &lt;p&gt;Here’s some text for the section&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt; 
+                    &lt;h1&gt;A second section of grouped elements&lt;h1&gt;
+                    &lt;p&gt;Here’s some text&lt;/p&gt;
+                &lt;/div&gt; 
+            </p>
+        
+        <h4>HTML Attributes</h4>
+        <p>HTML attributes are values added to the opening tag of an element to configure the element or change the element’s default behavior. 
+            In the provided example, we are giving the &lt;p&gt; (paragraph) element a unique identifier using the &lt;id&gt; attribute and changing 
+            the color of the default text using the &lt;style&gt; attribute.</p>
+        <p class="code">
+            &lt;p id="my-paragraph" style="color: green;"&gt;Here’s some text for a paragraph that is being altered by HTML attributes&lt;/p&gt;
+        </p>
+
+        <h4>Attribute Name and Values</h4>
+            <p>HTML attributes consist of a name and a value using the following syntax: name="value" and can be added to the opening tag of an 
+                HTML element to configure or change the behavior of the element.</p>
+            <p class="code">&lt;elementName name="value"&gt;&lt;/elementName&gt;
+            </p>
+
+        <h4>Unique ID Attributes</h4>
+            <p>When needed, the &lt;id&gt; value can be called upon by CSS and JavaScript to manipulate, format, 
+                and perform specific instructions on that element and that element only. Valid &lt;id&gt; attributes should 
+                begin with a letter and should only contain letters (<span class="code">a-z</span>), digits (<span class="code">0-9</span>), 
+                hyphens (<span class="code">-</span>), underscores (<span class="code">_</span>), and periods (<span class="code">.</span>).</p>
+            <p class="code">
+                &lt;h1 id="A1"&gt;Hello World&lt;/h1&gt;
+            </p>
+        <h4>&lt;p&gt; Paragraph Element</h4>
+            <p>The <span class ="code"></span>&lt;p&gt;</span> paragraph element contains and displays a block of text.</p>
+            <p class ="code">This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        </section>
+
+
+    <h2>HTML Tables</h2>
+        <h3>Table Tags</h3>
             <table>
                 <thead>
                     <tr>
@@ -52,7 +177,7 @@
                     </tr>
                 </tbody>
             </table>
-        <h2>Table Attributes</h2>
+        <h3>Table Attributes</h3>
         <table>
             <thead>
                 <tr>
@@ -73,5 +198,6 @@
                     <td>Defines how many rows a td element should span.</td>
                 </tr>
             </tbody>
+    </main>
 </body>
 </html>
